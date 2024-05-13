@@ -80,7 +80,7 @@ namespace Oculus.Voice.Toolkit
              Debug.Log($"{this.name} invoke {state.ToString()}");
          }
 
-         voiceUIEvent.Invoke(state,dataObject);
+         voiceUIEvent?.Invoke(state,dataObject);
          switch (state)
          {
              case VoiceState.MicOff :
